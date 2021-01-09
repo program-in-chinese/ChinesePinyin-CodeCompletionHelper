@@ -114,4 +114,9 @@ Compatible with all the Intellij Platform product, indiscriminate Chinese progra
         token(System.getenv("PUBLISH_TOKEN"))
         channels(pluginVersion.split('-').getOrElse(1) { "default" }.split('.').first())
     }
+
+    runIde {
+        ideDirectory("/Applications/GoLand.app/Contents/")
+        //ideDirectory("/Applications/PyCharm CE.app/Contents/")
+    }
 }
